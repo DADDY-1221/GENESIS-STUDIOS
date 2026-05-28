@@ -5,7 +5,7 @@ import TravelShowcase from './TravelShowcase';
 import CreatorJourney from './CreatorJourney';
 import FutureExpansion from './FutureExpansion';
 
-function App() {
+export default function App() {
   return (
     <div>
       <Hero />
@@ -16,5 +16,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
