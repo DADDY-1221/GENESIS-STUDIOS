@@ -110,12 +110,11 @@ export default function FutureExpansion() {
           </div>
         </div>
 
-        <div style={customStyles.footerLine} />
+       <div style={customStyles.footerLine} />
         
         <p style={customStyles.copyright}>
-          &copy; {new Date().getFullYear()} Genesis Studios. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Genesis Studios | Global Production Hub.
         </p>
-
       </div>
     </section>
   );
