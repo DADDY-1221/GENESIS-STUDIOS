@@ -87,7 +87,7 @@ export default function FutureExpansion() {
     <section style={customStyles.section}>
       <div style={customStyles.container}>
         
-        <span style={customStyles.section.tagline}>Scaling the Vision</span>
+        <span style={customStyles.tagline}>Scaling the Vision</span>
         <h2 style={customStyles.title}>Future Expansion</h2>
         
         <p style={customStyles.description}>
