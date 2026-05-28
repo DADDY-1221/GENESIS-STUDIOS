@@ -87,7 +87,7 @@ export default function FutureExpansion() {
     <section style={customStyles.section}>
       <div style={customStyles.container}>
         
-        <span style={customStyles.tagline}>Scaling the Vision</span>
+        <span style={customStyles.section.tagline}>Scaling the Vision</span>
         <h2 style={customStyles.title}>Future Expansion</h2>
         
         <p style={customStyles.description}>
@@ -113,7 +113,7 @@ export default function FutureExpansion() {
         <div style={customStyles.footerLine} />
         
         <p style={customStyles.copyright}>
-          {"© "}{new Date().getFullYear()}{" Genesis Studios. All Rights Reserved."}
+          &copy; {new Date().getFullYear()} Genesis Studios. All Rights Reserved.
         </p>
 
       </div>
