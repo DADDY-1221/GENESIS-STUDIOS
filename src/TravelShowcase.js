@@ -148,7 +148,7 @@ export default function TravelShowcase() {
               <div style={styles.cardOverlay} />
               <div style={styles.cardContent}>
                 <span style={styles.cardCategory}>{project.category}</span>
-                <h3 style={project.cardTitle}>{project.title}</h3>
+                <h3 style={styles.cardTitle}>{project.title}</h3>
               </div>
             </div>
           ))}
