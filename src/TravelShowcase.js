@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function TravelShowcase() {
-  // Placeholder media array representing premium film destinations
   const projects = [
     {
       id: 1,
