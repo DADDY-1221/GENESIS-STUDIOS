@@ -1,18 +1,24 @@
-import React from 'react';
-import Hero from './Hero';
-import BrandStory from './BrandStory';
-import TravelShowcase from './TravelShowcase';
-import CreatorJourney from './CreatorJourney';
-import FutureExpansion from './FutureExpansion';
-
 export default function App() {
   return (
-    <div>
-      <Hero />
-      <BrandStory />
-      <TravelShowcase />
-      <CreatorJourney />
-      <FutureExpansion />
+    <div
+      style={{
+        background: "#020617",
+        color: "white",
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        fontFamily: "Arial",
+      }}
+    >
+      <h1 style={{ fontSize: "60px" }}>
+        GENESIS STUDIOS
+      </h1>
+
+      <p style={{ fontSize: "20px", opacity: 0.8 }}>
+        Cinematic Travel & Luxury Experiences
+      </p>
     </div>
   );
 }
