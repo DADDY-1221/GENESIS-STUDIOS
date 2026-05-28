@@ -113,7 +113,7 @@ export default function FutureExpansion() {
         <div style={customStyles.footerLine} />
         
         <p style={customStyles.copyright}>
-          © {new Date().getFullYear()} Genesis Studios. All Rights Reserved.
+          {"© "}{new Date().getFullYear()}{" Genesis Studios. All Rights Reserved."}
         </p>
 
       </div>
