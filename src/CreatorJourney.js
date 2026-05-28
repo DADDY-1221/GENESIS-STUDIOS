@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default function CreatorJourney() {
-  // Timeline milestones tracking the "from zero" brand evolution
   const milestones = [
     {
       id: 1,
@@ -62,7 +61,6 @@ export default function CreatorJourney() {
       flexDirection: 'column',
       gap: '60px'
     },
-    // The vertical line connecting the nodes
     verticalLine: {
       position: 'absolute',
       left: '15px',
