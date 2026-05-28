@@ -2,7 +2,8 @@ import React from 'react';
 import Hero from './Hero';
 import BrandStory from './BrandStory';
 import TravelShowcase from './TravelShowcase';
-import CreatorJourney from './CreatorJourney'; // 1. Added the import
+import CreatorJourney from './CreatorJourney';
+import FutureExpansion from './FutureExpansion';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Hero />
       <BrandStory />
       <TravelShowcase />
-      <CreatorJourney /> {/* 2. Placed it right below the Showcase */}
+      <CreatorJourney />
+      <FutureExpansion />
     </div>
   );
 }
