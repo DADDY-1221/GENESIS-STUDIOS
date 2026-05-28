@@ -11,7 +11,7 @@ export default function App() {
         flexDirection: "column",
         fontFamily: "Arial",
       }}
-    >
+    >GENESIS STUDIOS 
       <h1 style={{ fontSize: "60px" }}>
         GENESIS STUDIOS
       </h1>
