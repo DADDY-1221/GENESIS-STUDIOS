@@ -33,12 +33,12 @@ export default function App() {
     cursor: "pointer",
   }}
 >
-  Begin Journey
+      </p>
+   Begin Journey
 </button>
       >
         Cinematic travel, storytelling, luxury experiences,
         and global adventures.
-      </p>
 
       <img
         src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop"
