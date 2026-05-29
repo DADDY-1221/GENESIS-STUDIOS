@@ -1,4 +1,27 @@
 export default function App() {
+  const destinations = [
+    {
+      name: "Swiss Alps",
+      image:
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      name: "Dubai Nights",
+      image:
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      name: "Tokyo Dreams",
+      image:
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      name: "Iceland Escape",
+      image:
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
+    },
+  ];
+
   return (
     <div
       style={{
@@ -13,28 +36,28 @@ export default function App() {
         style={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "25px 60px",
+          alignItems: "center",
+          padding: "20px 50px",
           position: "fixed",
           width: "100%",
           top: 0,
-          backdropFilter: "blur(10px)",
-          background: "rgba(2,6,23,0.7)",
           zIndex: 1000,
+          background: "rgba(2,6,23,0.7)",
+          backdropFilter: "blur(10px)",
           boxSizing: "border-box",
         }}
       >
         <h2 style={{ margin: 0 }}>GENESIS STUDIOS</h2>
 
-        <div style={{ display: "flex", gap: "30px" }}>
+        <div style={{ display: "flex", gap: "25px" }}>
           <span>HOME</span>
           <span>DESTINATIONS</span>
-          <span>STORIES</span>
           <span>ABOUT</span>
           <span>CONTACT</span>
         </div>
       </nav>
 
-      {/* HERO SECTION */}
+      {/* HERO */}
       <section
         style={{
           height: "100vh",
@@ -54,14 +77,14 @@ export default function App() {
             background: "rgba(0,0,0,0.45)",
             padding: "50px",
             borderRadius: "20px",
-            backdropFilter: "blur(5px)",
+            maxWidth: "900px",
           }}
         >
           <p
             style={{
-              letterSpacing: "6px",
-              fontSize: "14px",
+              letterSpacing: "5px",
               opacity: 0.8,
+              marginBottom: "20px",
             }}
           >
             CINEMATIC LUXURY EXPERIENCES
@@ -70,8 +93,8 @@ export default function App() {
           <h1
             style={{
               fontSize: "80px",
-              margin: "20px 0",
               lineHeight: 1,
+              marginBottom: "20px",
             }}
           >
             GENESIS
@@ -81,9 +104,8 @@ export default function App() {
 
           <p
             style={{
-              maxWidth: "700px",
               fontSize: "20px",
-              opacity: 0.9,
+              lineHeight: 1.7,
               marginBottom: "30px",
             }}
           >
@@ -94,11 +116,11 @@ export default function App() {
           <button
             style={{
               padding: "16px 36px",
-              fontSize: "18px",
               borderRadius: "50px",
               border: "none",
-              cursor: "pointer",
+              fontSize: "18px",
               fontWeight: "bold",
+              cursor: "pointer",
             }}
           >
             Begin Journey
@@ -113,61 +135,79 @@ export default function App() {
           textAlign: "center",
         }}
       >
-        <h2 style={{ fontSize: "50px", marginBottom: "60px" }}>
+        <h2
+          style={{
+            fontSize: "50px",
+            marginBottom: "60px",
+          }}
+        >
           Featured Destinations
-       [
-  {
-    name: "Swiss Alps",
-    image:
-      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    name: "Dubai Nights",
-    image:
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    name: "Tokyo Dreams",
-    image:
-      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
-  },
-  {
-    name: "Iceland Escape",
-    image:
-      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
-  },
-].map((place) => (
-  <div
-    key={place.name}
-    style={{
-      backgroundImage: `url(${place.image})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      height: "350px",
-      borderRadius: "24px",
-      position: "relative",
-      overflow: "hidden",
-    }}
-  >
-    <div
-      style={{
-        position: "absolute",
-        inset: 0,
-        background:
-          "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
-        display: "flex",
-        alignItems: "flex-end",
-        padding: "30px",
-        fontSize: "32px",
-        fontWeight: "bold",
-      }}
-    >
-      {place.name}
-    </div>
-  </div>
-))
+        </h2>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "30px",
+          }}
+        >
+          {destinations.map((place) => (
+            <div
+              key={place.name}
+              style={{
+                height: "350px",
+                borderRadius: "24px",
+                overflow: "hidden",
+                position: "relative",
+                backgroundImage: `url(${place.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.85), transparent)",
+                  display: "flex",
+                  alignItems: "flex-end",
+                  padding: "30px",
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                }}
+              >
+                {place.name}
+              </div>
+            </div>
           ))}
         </div>
+      </section>
+
+      {/* ABOUT */}
+      <section
+        style={{
+          padding: "100px 50px",
+          textAlign: "center",
+          maxWidth: "1000px",
+          margin: "auto",
+        }}
+      >
+        <h2 style={{ fontSize: "50px", marginBottom: "30px" }}>
+          About Genesis Studios
+        </h2>
+
+        <p
+          style={{
+            fontSize: "20px",
+            lineHeight: 1.8,
+            opacity: 0.8,
+          }}
+        >
+          Genesis Studios is a cinematic travel and storytelling brand
+          focused on luxury experiences, global adventures, modern media,
+          and creative filmmaking inspired by exploration and innovation.
+        </p>
       </section>
 
       {/* FOOTER */}
@@ -182,4 +222,4 @@ export default function App() {
       </footer>
     </div>
   );
-}
+}\
