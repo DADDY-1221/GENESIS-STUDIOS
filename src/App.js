@@ -115,38 +115,57 @@ export default function App() {
       >
         <h2 style={{ fontSize: "50px", marginBottom: "60px" }}>
           Featured Destinations
-        </h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "30px",
-          }}
-        >
-          {[
-            "Swiss Alps",
-            "Dubai Nights",
-            "Tokyo Dreams",
-            "Iceland Escape",
-          ].map((place) => (
-            <div
-              key={place}
-              style={{
-                background: "#0f172a",
-                padding: "40px",
-                borderRadius: "20px",
-                minHeight: "250px",
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "center",
-                fontSize: "28px",
-                fontWeight: "bold",
-                transition: "0.3s",
-              }}
-            >
-              {place}
-            </div>
+       [
+  {
+    name: "Swiss Alps",
+    image:
+      "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Dubai Nights",
+    image:
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Tokyo Dreams",
+    image:
+      "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
+  },
+  {
+    name: "Iceland Escape",
+    image:
+      "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
+  },
+].map((place) => (
+  <div
+    key={place.name}
+    style={{
+      backgroundImage: `url(${place.image})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+      height: "350px",
+      borderRadius: "24px",
+      position: "relative",
+      overflow: "hidden",
+    }}
+  >
+    <div
+      style={{
+        position: "absolute",
+        inset: 0,
+        background:
+          "linear-gradient(to top, rgba(0,0,0,0.8), transparent)",
+        display: "flex",
+        alignItems: "flex-end",
+        padding: "30px",
+        fontSize: "32px",
+        fontWeight: "bold",
+      }}
+    >
+      {place.name}
+    </div>
+  </div>
+))
           ))}
         </div>
       </section>
