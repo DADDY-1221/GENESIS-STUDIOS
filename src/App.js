@@ -20,13 +20,21 @@ export default function App() {
       </h1>
 
       <p
-        style={{
-          fontSize: "24px",
-          opacity: 0.8,
-          maxWidth: "700px",
-          margin: "auto",
-          lineHeight: 1.7,
-        }}
+        <button
+  style={{
+    marginTop: "40px",
+    padding: "16px 36px",
+    fontSize: "18px",
+    borderRadius: "50px",
+    border: "none",
+    backgroundColor: "white",
+    color: "#020617",
+    fontWeight: "bold",
+    cursor: "pointer",
+  }}
+>
+  Begin Journey
+</button>
       >
         Cinematic travel, storytelling, luxury experiences,
         and global adventures.
