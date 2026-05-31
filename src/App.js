@@ -1,11 +1,34 @@
 export default function App() {
+  const destinations = [
+    {
+      title: "Swiss Alps",
+      image:
+        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Dubai Nights",
+      image:
+        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Tokyo Dreams",
+      image:
+        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
+    },
+    {
+      title: "Iceland Escape",
+      image:
+        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
+    },
+  ];
+
   return (
     <div
       style={{
         backgroundColor: "#020617",
         color: "white",
-        minHeight: "100vh",
         fontFamily: "Arial",
+        minHeight: "100vh",
       }}
     >
       {/* NAVBAR */}
@@ -121,53 +144,40 @@ export default function App() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
-            gap: "25px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "30px",
           }}
         >
-          <div
-            style={{
-              background: "#0f172a",
-              padding: "80px 20px",
-              borderRadius: "20px",
-              fontSize: "28px",
-            }}
-          >
-            Swiss Alps
-          </div>
-
-          <div
-            style={{
-              background: "#0f172a",
-              padding: "80px 20px",
-              borderRadius: "20px",
-              fontSize: "28px",
-            }}
-          >
-            Dubai Nights
-          </div>
-
-          <div
-            style={{
-              background: "#0f172a",
-              padding: "80px 20px",
-              borderRadius: "20px",
-              fontSize: "28px",
-            }}
-          >
-            Tokyo Dreams
-          </div>
-
-          <div
-            style={{
-              background: "#0f172a",
-              padding: "80px 20px",
-              borderRadius: "20px",
-              fontSize: "28px",
-            }}
-          >
-            Iceland Escape
-          </div>
+          {destinations.map((place) => (
+            <div
+              key={place.title}
+              style={{
+                height: "350px",
+                borderRadius: "24px",
+                overflow: "hidden",
+                position: "relative",
+                backgroundImage: `url(${place.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.85), transparent)",
+                  display: "flex",
+                  alignItems: "flex-end",
+                  padding: "30px",
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                }}
+              >
+                {place.title}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
