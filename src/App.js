@@ -27,7 +27,7 @@ export default function App() {
       style={{
         backgroundColor: "#020617",
         color: "white",
-        fontFamily: "Arial",
+        fontFamily: "Inter, sans-serif",
         minHeight: "100vh",
       }}
     >
