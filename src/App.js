@@ -3,65 +3,41 @@ export default function App() {
     <div
       style={{
         backgroundColor: "#020617",
-        <nav
-  style={{
-    position: "fixed",
-    top: 0,
-    width: "100%",
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    padding: "20px 50px",
-    background: "rgba(2,6,23,0.7)",
-    backdropFilter: "blur(10px)",
-    zIndex: 1000,
-    boxSizing: "border-box",
-  }}
->
-  <h2 style={{ margin: 0 }}>
-    GENESIS STUDIOS
-  </h2>
-
-  <div
-    style={{
-      display: "flex",
-      gap: "25px",
-      fontSize: "14px",
-      letterSpacing: "2px",
-    }}
-  >
-    <span>HOME</span>
-    <span>DESTINATIONS</span>
-    <span>ABOUT</span>
-    <span>CONTACT</span>
-  </div>
-</nav>
         color: "white",
-        fontFamily: "Arial",
         minHeight: "100vh",
+        fontFamily: "Arial",
       }}
     >
       {/* NAVBAR */}
       <nav
         style={{
+          position: "fixed",
+          top: 0,
+          width: "100%",
           display: "flex",
           justifyContent: "space-between",
-          padding: "25px 60px",
-          position: "fixed",
-          width: "100%",
-          top: 0,
-          backdropFilter: "blur(10px)",
+          alignItems: "center",
+          padding: "20px 50px",
           background: "rgba(2,6,23,0.7)",
+          backdropFilter: "blur(10px)",
           zIndex: 1000,
           boxSizing: "border-box",
         }}
       >
-        <h2 style={{ margin: 0 }}>GENESIS STUDIOS</h2>
+        <h2 style={{ margin: 0 }}>
+          GENESIS STUDIOS
+        </h2>
 
-        <div style={{ display: "flex", gap: "30px" }}>
+        <div
+          style={{
+            display: "flex",
+            gap: "25px",
+            fontSize: "14px",
+            letterSpacing: "2px",
+          }}
+        >
           <span>HOME</span>
           <span>DESTINATIONS</span>
-          <span>STORIES</span>
           <span>ABOUT</span>
           <span>CONTACT</span>
         </div>
@@ -84,44 +60,31 @@ export default function App() {
       >
         <div
           style={{
-            background: "rgba(0,0,0,0.45)",
+            backgroundColor: "rgba(0,0,0,0.5)",
             padding: "50px",
             borderRadius: "20px",
-            backdropFilter: "blur(5px)",
+            maxWidth: "800px",
           }}
         >
-          <p
-            style={{
-              letterSpacing: "6px",
-              fontSize: "14px",
-              opacity: 0.8,
-            }}
-          >
-            CINEMATIC LUXURY EXPERIENCES
-          </p>
-
           <h1
             style={{
               fontSize: "80px",
-              margin: "20px 0",
-              lineHeight: 1,
+              marginBottom: "20px",
             }}
           >
-            GENESIS
-            <br />
-            STUDIOS
+            GENESIS STUDIOS
           </h1>
 
           <p
             style={{
-              maxWidth: "700px",
-              fontSize: "20px",
-              opacity: 0.9,
+              fontSize: "22px",
+              lineHeight: "1.7",
               marginBottom: "30px",
             }}
           >
-            Explore breathtaking destinations, cinematic storytelling,
-            and unforgettable luxury adventures across the globe.
+            Cinematic travel, luxury experiences,
+            storytelling, and unforgettable adventures
+            across the globe.
           </p>
 
           <button
@@ -142,46 +105,101 @@ export default function App() {
       {/* DESTINATIONS */}
       <section
         style={{
-          padding: "100px 50px",
+          padding: "100px 40px",
           textAlign: "center",
         }}
       >
-        <h2 style={{ fontSize: "50px", marginBottom: "60px" }}>
+        <h2
+          style={{
+            fontSize: "50px",
+            marginBottom: "50px",
+          }}
+        >
           Featured Destinations
         </h2>
 
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "30px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+            gap: "25px",
           }}
         >
-          {[
-            "Swiss Alps",
-            "Dubai Nights",
-            "Tokyo Dreams",
-            "Iceland Escape",
-          ].map((place) => (
-            <div
-              key={place}
-              style={{
-                background: "#0f172a",
-                padding: "40px",
-                borderRadius: "20px",
-                minHeight: "250px",
-                display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "center",
-                fontSize: "28px",
-                fontWeight: "bold",
-                transition: "0.3s",
-              }}
-            >
-              {place}
-            </div>
-          ))}
+          <div
+            style={{
+              background: "#0f172a",
+              padding: "80px 20px",
+              borderRadius: "20px",
+              fontSize: "28px",
+            }}
+          >
+            Swiss Alps
+          </div>
+
+          <div
+            style={{
+              background: "#0f172a",
+              padding: "80px 20px",
+              borderRadius: "20px",
+              fontSize: "28px",
+            }}
+          >
+            Dubai Nights
+          </div>
+
+          <div
+            style={{
+              background: "#0f172a",
+              padding: "80px 20px",
+              borderRadius: "20px",
+              fontSize: "28px",
+            }}
+          >
+            Tokyo Dreams
+          </div>
+
+          <div
+            style={{
+              background: "#0f172a",
+              padding: "80px 20px",
+              borderRadius: "20px",
+              fontSize: "28px",
+            }}
+          >
+            Iceland Escape
+          </div>
         </div>
+      </section>
+
+      {/* ABOUT */}
+      <section
+        style={{
+          padding: "100px 30px",
+          textAlign: "center",
+          maxWidth: "900px",
+          margin: "auto",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "50px",
+            marginBottom: "30px",
+          }}
+        >
+          About Genesis Studios
+        </h2>
+
+        <p
+          style={{
+            fontSize: "20px",
+            lineHeight: "1.8",
+            opacity: "0.8",
+          }}
+        >
+          Genesis Studios is a cinematic travel and storytelling brand
+          focused on global exploration, luxury experiences,
+          creative filmmaking, and modern digital storytelling.
+        </p>
       </section>
 
       {/* FOOTER */}
@@ -189,10 +207,10 @@ export default function App() {
         style={{
           textAlign: "center",
           padding: "40px",
-          opacity: 0.6,
+          opacity: "0.6",
         }}
       >
-        © 2026 Genesis Studios — Cinematic Luxury Experiences
+        © 2026 Genesis Studios
       </footer>
     </div>
   );
