@@ -3,6 +3,39 @@ export default function App() {
     <div
       style={{
         backgroundColor: "#020617",
+        <nav
+  style={{
+    position: "fixed",
+    top: 0,
+    width: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    padding: "20px 50px",
+    background: "rgba(2,6,23,0.7)",
+    backdropFilter: "blur(10px)",
+    zIndex: 1000,
+    boxSizing: "border-box",
+  }}
+>
+  <h2 style={{ margin: 0 }}>
+    GENESIS STUDIOS
+  </h2>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "25px",
+      fontSize: "14px",
+      letterSpacing: "2px",
+    }}
+  >
+    <span>HOME</span>
+    <span>DESTINATIONS</span>
+    <span>ABOUT</span>
+    <span>CONTACT</span>
+  </div>
+</nav>
         color: "white",
         fontFamily: "Arial",
         minHeight: "100vh",
