@@ -40,7 +40,7 @@ export default function App() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "20px 50px",
+          padding: "140px 40px",
           background: "rgba(2,6,23,0.7)",
           backdropFilter: "blur(10px)",
           zIndex: 1000,
@@ -84,7 +84,7 @@ export default function App() {
         <div
           style={{
             backgroundColor: "rgba(0,0,0,0.5)",
-            padding: "50px",
+            padding: "140px 40px",
             borderRadius: "20px",
             maxWidth: "800px",
           }}
@@ -112,7 +112,7 @@ export default function App() {
 
           <button
             style={{
-              padding: "16px 36px",
+              padding: "140px 40px",
               fontSize: "18px",
               borderRadius: "50px",
               border: "none",
@@ -128,7 +128,7 @@ export default function App() {
       {/* DESTINATIONS */}
       <section
         style={{
-          padding: "100px 40px",
+          padding: "140px 40px",
           textAlign: "center",
         }}
       >
@@ -173,7 +173,7 @@ export default function App() {
                     "linear-gradient(to top, rgba(0,0,0,0.85), transparent)",
                   display: "flex",
                   alignItems: "flex-end",
-                  padding: "30px",
+                  padding: "140px 40px",
                   fontSize: "30px",
                   fontWeight: "bold",
                 }}
@@ -188,7 +188,7 @@ export default function App() {
       {/* ABOUT */}
       <section
         style={{
-          padding: "100px 30px",
+          padding: "140px 30px",
           textAlign: "center",
           maxWidth: "900px",
           margin: "auto",
@@ -218,7 +218,7 @@ export default function App() {
       {/* SOCIALS */}
 <section
   style={{
-    padding: "100px 30px",
+    padding: "140px 30px",
     textAlign: "center",
   }}
 >
@@ -260,7 +260,7 @@ export default function App() {
       {/* CONTACT */}
 <section
   style={{
-    padding: "100px 30px",
+    padding: "140px 30px",
     textAlign: "center",
     maxWidth: "900px",
     margin: "auto",
