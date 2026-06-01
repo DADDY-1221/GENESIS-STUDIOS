@@ -255,6 +255,49 @@ export default function App() {
     ))}
   </div>
 </section>
+      {/* CONTACT */}
+<section
+  style={{
+    padding: "100px 30px",
+    textAlign: "center",
+    maxWidth: "900px",
+    margin: "auto",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "50px",
+      marginBottom: "30px",
+    }}
+  >
+    Collaborate With Genesis Studios
+  </h2>
+
+  <p
+    style={{
+      fontSize: "20px",
+      lineHeight: "1.8",
+      opacity: "0.8",
+      marginBottom: "40px",
+    }}
+  >
+    Open for cinematic collaborations,
+    creative partnerships, luxury travel campaigns,
+    and global storytelling projects.
+  </p>
+
+  <div
+    style={{
+      background: "#0f172a",
+      display: "inline-block",
+      padding: "20px 40px",
+      borderRadius: "16px",
+      fontSize: "18px",
+    }}
+  >
+    genesisstudiosbusiness@gmail.com
+  </div>
+</section>
       {/* FOOTER */}
       <footer
         style={{
