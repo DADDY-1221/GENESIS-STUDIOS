@@ -247,6 +247,7 @@ export default function App() {
           background: "#0f172a",
           padding: "20px 40px",
           borderRadius: "16px",
+          boxShadow: "0 0 20px rgba(255,255,255,0.05)",
           cursor: "pointer",
           transition: "0.3s",
         }}
