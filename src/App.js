@@ -214,7 +214,47 @@ export default function App() {
           creative filmmaking, and modern digital storytelling.
         </p>
       </section>
+      {/* SOCIALS */}
+<section
+  style={{
+    padding: "100px 30px",
+    textAlign: "center",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "50px",
+      marginBottom: "30px",
+    }}
+  >
+    Connect With Genesis Studios
+  </h2>
 
+  <div
+    style={{
+      display: "flex",
+      justifyContent: "center",
+      gap: "20px",
+      flexWrap: "wrap",
+      marginTop: "40px",
+    }}
+  >
+    {["YouTube", "Instagram", "TikTok", "X/Twitter"].map((social) => (
+      <div
+        key={social}
+        style={{
+          background: "#0f172a",
+          padding: "20px 40px",
+          borderRadius: "16px",
+          cursor: "pointer",
+          transition: "0.3s",
+        }}
+      >
+        {social}
+      </div>
+    ))}
+  </div>
+</section>
       {/* FOOTER */}
       <footer
         style={{
