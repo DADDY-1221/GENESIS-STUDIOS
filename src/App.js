@@ -122,9 +122,17 @@ export default function App() {
             }}
           >
             Begin Journey
-          </button>
-        </div>
-      </section>
+          style={{
+  marginTop: "40px",
+  padding: "18px 40px",
+  borderRadius: "999px",
+  border: "none",
+  background: "white",
+  color: "black",
+  fontSize: "18px",
+  fontWeight: "bold",
+  cursor: "pointer",
+}}
 
       {/* DESTINATIONS */}
 <section
