@@ -69,7 +69,8 @@ export default function App() {
       {/* HERO SECTION */}
       <section
         style={{
-          height: "100vh",
+          minHeight: "100vh",
+          padding: "120px 20px",
           backgroundImage:
             "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop')",
           backgroundSize: "cover",
