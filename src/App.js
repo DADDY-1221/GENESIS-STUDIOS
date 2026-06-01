@@ -126,65 +126,84 @@ export default function App() {
       </section>
 
       {/* DESTINATIONS */}
-      <section
+<section
+  style={{
+    padding: "140px 40px",
+    textAlign: "center",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "50px",
+      marginBottom: "60px",
+    }}
+  >
+    Featured Destinations
+  </h2>
+
+  <div
+    style={{
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+      gap: "30px",
+    }}
+  >
+    {[
+      {
+        title: "Swiss Alps",
+        image:
+          "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
+      },
+      {
+        title: "Dubai Nights",
+        image:
+          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
+      },
+      {
+        title: "Tokyo Dreams",
+        image:
+          "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
+      },
+      {
+        title: "Iceland Escape",
+        image:
+          "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
+      },
+    ].map((place) => (
+      <div
+        key={place.title}
         style={{
-          padding: "140px 40px",
-          textAlign: "center",
+          height: "380px",
+          borderRadius: "24px",
+          overflow: "hidden",
+          position: "relative",
+          backgroundImage: `url(${place.image})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          cursor: "pointer",
+          transition: "0.4s",
+          boxShadow: "0 0 30px rgba(255,255,255,0.08)",
         }}
       >
-        <h2
-          style={{
-            fontSize: "50px",
-            marginBottom: "50px",
-          }}
-        >
-          Featured Destinations
-        </h2>
-
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-            gap: "30px",
+            position: "absolute",
+            inset: 0,
+            background:
+              "linear-gradient(to top, rgba(0,0,0,0.9), transparent)",
+            display: "flex",
+            alignItems: "flex-end",
+            padding: "30px",
+            fontSize: "32px",
+            fontWeight: "bold",
           }}
         >
-          {destinations.map((place) => (
-            <div
-              key={place.title}
-              style={{
-                height: "350px",
-                borderRadius: "24px",
-                boxShadow: "0 0 30px rgba(255,255,255,0.08)",
-                overflow: "hidden",
-                position: "relative",
-                transition: "0.4s",
-                transition: "0.4s",
-                cursor: "pointer",
-                backgroundImage: `url(${place.image})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-              }}
-            >
-              <div
-                style={{
-                  position: "absolute",
-                  inset: 0,
-                  background:
-                    "linear-gradient(to top, rgba(0,0,0,0.85), transparent)",
-                  display: "flex",
-                  alignItems: "flex-end",
-                  padding: "140px 40px",
-                  fontSize: "30px",
-                  fontWeight: "bold",
-                }}
-              >
-                {place.title}
-              </div>
-            </div>
-          ))}
+          {place.title}
         </div>
-      </section>
-
+      </div>
+    ))}
+  </div>
+</section>
       {/* ABOUT */}
       <section
         style={{
