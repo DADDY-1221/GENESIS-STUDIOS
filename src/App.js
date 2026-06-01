@@ -294,6 +294,7 @@ export default function App() {
       display: "inline-block",
       padding: "20px 40px",
       borderRadius: "16px",
+      boxShadow: "0 0 25px rgba(255,255,255,0.05)",
       fontSize: "18px",
     }}
   >
