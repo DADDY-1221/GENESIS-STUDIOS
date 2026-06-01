@@ -154,6 +154,7 @@ export default function App() {
               style={{
                 height: "350px",
                 borderRadius: "24px",
+                boxShadow: "0 0 30px rgba(255,255,255,0.08)",
                 overflow: "hidden",
                 position: "relative",
                 transition: "0.4s",
