@@ -305,7 +305,7 @@ export default function App() {
       <footer
         style={{
           textAlign: "center",
-          padding: "40px",
+          padding: "140px 40px",
           opacity: "0.6",
         }}
       >
