@@ -1,99 +1,79 @@
 export default function App() {
-  const destinations = [
-    {
-      title: "Swiss Alps",
-      image:
-        "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      title: "Dubai Nights",
-      image:
-        "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      title: "Tokyo Dreams",
-      image:
-        "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
-    },
-    {
-      title: "Iceland Escape",
-      image:
-        "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
-    },
-  ];
-
   return (
     <div
       style={{
-        backgroundColor: "#020617",
+        background: "#050816",
         color: "white",
-        fontFamily: "Inter, sans-serif",
-        minHeight: "100vh",
+        fontFamily: "Arial",
       }}
     >
-      {/* NAVBAR */}
-      <nav
-        style={{
-          position: "fixed",
-          top: 0,
-          width: "100%",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "140px 40px",
-          background: "rgba(2,6,23,0.7)",
-          backdropFilter: "blur(10px)",
-          zIndex: 1000,
-          boxSizing: "border-box",
-        }}
-      >
-        <h2 style={{ margin: 0 }}>
-          GENESIS STUDIOS
-        </h2>
-
-        <div
-          style={{
-            display: "flex",
-            gap: "25px",
-            fontSize: "14px",
-            letterSpacing: "2px",
-          }}
-        >
-          <span>HOME</span>
-          <span>DESTINATIONS</span>
-          <span>ABOUT</span>
-          <span>CONTACT</span>
-        </div>
-      </nav>
-
       {/* HERO SECTION */}
       <section
         style={{
           minHeight: "100vh",
-          padding: "120px 20px",
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2000&auto=format&fit=crop')",
+            "url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=2070&auto=format&fit=crop')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           display: "flex",
+          flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
           textAlign: "center",
           padding: "20px",
         }}
       >
-        <div
+        <nav
           style={{
-            backgroundColor: "rgba(0,0,0,0.5)",
-            padding: "140px 40px",
-            borderRadius: "20px",
-            maxWidth: "800px",
+            position: "absolute",
+            top: "30px",
+            width: "90%",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
           }}
         >
+          <h2>GENESIS STUDIOS</h2>
+
+          <div
+            style={{
+              display: "flex",
+              gap: "25px",
+              fontSize: "14px",
+              letterSpacing: "2px",
+            }}
+          >
+            <span>HOME</span>
+            <span>DESTINATIONS</span>
+            <span>ABOUT</span>
+            <span>CONTACT</span>
+          </div>
+        </nav>
+
+        <div
+          style={{
+            background: "rgba(0,0,0,0.55)",
+            padding: "60px",
+            borderRadius: "30px",
+            backdropFilter: "blur(8px)",
+            maxWidth: "900px",
+          }}
+        >
+          <p
+            style={{
+              letterSpacing: "4px",
+              fontSize: "14px",
+              marginBottom: "20px",
+            }}
+          >
+            CINEMATIC LUXURY EXPERIENCES
+          </p>
+
           <h1
             style={{
-              fontSize: "80px",
-              marginBottom: "20px",
+              fontSize: "72px",
+              margin: "0",
+              lineHeight: "1",
             }}
           >
             GENESIS STUDIOS
@@ -101,131 +81,45 @@ export default function App() {
 
           <p
             style={{
-              fontSize: "22px",
-              lineHeight: "1.7",
-              marginBottom: "30px",
+              marginTop: "25px",
+              fontSize: "20px",
+              opacity: 0.8,
             }}
           >
-            Cinematic travel, luxury experiences,
-            storytelling, and unforgettable adventures
-            across the globe.
+            Cinematic travel, storytelling, and unforgettable luxury journeys.
           </p>
 
           <button
             style={{
-              padding: "140px 40px",
-              fontSize: "18px",
-              borderRadius: "50px",
+              marginTop: "40px",
+              padding: "18px 40px",
+              borderRadius: "999px",
               border: "none",
-              cursor: "pointer",
+              background: "white",
+              color: "black",
+              fontSize: "18px",
               fontWeight: "bold",
+              cursor: "pointer",
             }}
           >
             Begin Journey
-          style={{
-            marginTop: "40px",
-            padding: "18px 40px",
-            borderRadius: "999px",
-            border: "none",
-            background: "white",
-            color: "black",
-            fontSize: "18px",
-            fontWeight: "bold",
-            cursor: "pointer",
-        }}
-
-      {/* DESTINATIONS */}
-<section
-  style={{
-    padding: "140px 40px",
-    textAlign: "center",
-  }}
->
-  <h2
-    style={{
-      fontSize: "50px",
-      marginBottom: "60px",
-    }}
-  >
-    Featured Destinations
-  </h2>
-
-  <div
-    style={{
-      display: "grid",
-      gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
-      gap: "30px",
-    }}
-  >
-    {[
-      {
-        title: "Swiss Alps",
-        image:
-          "https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        title: "Dubai Nights",
-        image:
-          "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        title: "Tokyo Dreams",
-        image:
-          "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=1200&auto=format&fit=crop",
-      },
-      {
-        title: "Iceland Escape",
-        image:
-          "https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=1200&auto=format&fit=crop",
-      },
-    ].map((place) => (
-      <div
-        key={place.title}
-        style={{
-          height: "380px",
-          borderRadius: "24px",
-          overflow: "hidden",
-          position: "relative",
-          backgroundImage: `url(${place.image})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          cursor: "pointer",
-          transition: "0.4s",
-          boxShadow: "0 0 30px rgba(255,255,255,0.08)",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            inset: 0,
-            background:
-              "linear-gradient(to top, rgba(0,0,0,0.9), transparent)",
-            display: "flex",
-            alignItems: "flex-end",
-            padding: "30px",
-            fontSize: "32px",
-            fontWeight: "bold",
-          }}
-        >
-          {place.title}
+          </button>
         </div>
-      </div>
-    ))}
-  </div>
-</section>
-      {/* ABOUT */}
+      </section>
+
+      {/* ABOUT SECTION */}
       <section
         style={{
-          padding: "140px 30px",
+          padding: "120px 20px",
           textAlign: "center",
-          maxWidth: "900px",
+          maxWidth: "1000px",
           margin: "auto",
         }}
       >
         <h2
           style={{
-            fontSize: "50px",
-            marginBottom: "30px",
+            fontSize: "48px",
+            marginBottom: "20px",
           }}
         >
           About Genesis Studios
@@ -234,110 +128,107 @@ export default function App() {
         <p
           style={{
             fontSize: "20px",
+            opacity: 0.8,
             lineHeight: "1.8",
-            opacity: "0.8",
           }}
         >
-          Genesis Studios is a cinematic travel and storytelling brand
-          focused on global exploration, luxury experiences,
-          creative filmmaking, and modern digital storytelling.
+          Genesis Studios creates cinematic luxury experiences through travel,
+          storytelling, design, and creative exploration around the world.
         </p>
       </section>
-      {/* SOCIALS */}
-<section
-  style={{
-    padding: "140px 30px",
-    textAlign: "center",
-  }}
->
-  <h2
-    style={{
-      fontSize: "50px",
-      marginBottom: "30px",
-    }}
-  >
-    Connect With Genesis Studios
-  </h2>
 
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      flexWrap: "wrap",
-      marginTop: "40px",
-    }}
-  >
-    {["YouTube", "Instagram", "TikTok", "X/Twitter"].map((social) => (
-      <div
-        key={social}
+      {/* DESTINATIONS */}
+      <section
         style={{
-          background: "#0f172a",
-          padding: "20px 40px",
-          borderRadius: "16px",
-          boxShadow: "0 0 20px rgba(255,255,255,0.05)",
-          cursor: "pointer",
-          transition: "0.3s",
+          padding: "80px 20px",
         }}
       >
-        {social}
-      </div>
-    ))}
-  </div>
-</section>
-      {/* CONTACT */}
-<section
-  style={{
-    padding: "140px 30px",
-    textAlign: "center",
-    maxWidth: "900px",
-    margin: "auto",
-  }}
->
-  <h2
-    style={{
-      fontSize: "50px",
-      marginBottom: "30px",
-    }}
-  >
-    Collaborate With Genesis Studios
-  </h2>
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "48px",
+            marginBottom: "60px",
+          }}
+        >
+          Featured Destinations
+        </h2>
 
-  <p
-    style={{
-      fontSize: "20px",
-      lineHeight: "1.8",
-      opacity: "0.8",
-      marginBottom: "40px",
-    }}
-  >
-    Open for cinematic collaborations,
-    creative partnerships, luxury travel campaigns,
-    and global storytelling projects.
-  </p>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "30px",
+          }}
+        >
+          {[
+            {
+              title: "Dubai",
+              image:
+                "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2070&auto=format&fit=crop",
+            },
+            {
+              title: "Tokyo",
+              image:
+                "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=2070&auto=format&fit=crop",
+            },
+            {
+              title: "Santorini",
+              image:
+                "https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?q=80&w=2070&auto=format&fit=crop",
+            },
+          ].map((place) => (
+            <div
+              key={place.title}
+              style={{
+                height: "400px",
+                borderRadius: "25px",
+                overflow: "hidden",
+                position: "relative",
+              }}
+            >
+              <img
+                src={place.image}
+                alt={place.title}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
 
-  <div
-    style={{
-      background: "#0f172a",
-      display: "inline-block",
-      padding: "20px 40px",
-      borderRadius: "16px",
-      boxShadow: "0 0 25px rgba(255,255,255,0.05)",
-      fontSize: "18px",
-    }}
-  >
-    genesisstudiosbusiness@gmail.com
-  </div>
-</section>
+              <div
+                style={{
+                  position: "absolute",
+                  bottom: "0",
+                  width: "100%",
+                  padding: "30px",
+                  background:
+                    "linear-gradient(to top, rgba(0,0,0,0.9), transparent)",
+                }}
+              >
+                <h3
+                  style={{
+                    fontSize: "32px",
+                    margin: 0,
+                  }}
+                >
+                  {place.title}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* FOOTER */}
       <footer
         style={{
+          padding: "60px 20px",
           textAlign: "center",
-          padding: "140px 40px",
-          opacity: "0.6",
+          opacity: 0.7,
         }}
       >
-        © 2026 Genesis Studios
+        © 2026 Genesis Studios — Luxury Beyond Travel
       </footer>
     </div>
   );
