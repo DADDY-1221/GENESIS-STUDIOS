@@ -12,6 +12,12 @@ const Footer = () => {
       letterSpacing: '0.2em',
       textTransform: 'uppercase'
     },
+    cta: {
+      marginBottom: '40px',
+      fontSize: '1.5rem',
+      color: '#FFFFFF',
+      fontFamily: "'Playfair Display', serif"
+    },
     links: {
       display: 'flex',
       justifyContent: 'center',
@@ -22,6 +28,7 @@ const Footer = () => {
 
   return (
     <footer style={styles.footer}>
+      <div style={styles.cta}>Let's Create Together</div>
       <div style={styles.links}>
         <span>Instagram</span>
         <span>YouTube</span>
