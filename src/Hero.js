@@ -55,14 +55,12 @@ export default function Hero() {
       lineHeight: '1.8',
       fontWeight: '300',
       marginBottom: '40px'
-    },
-    btnContainer: {
+    },btnContainer: {
       display: 'flex',
       gap: '15px', // Reduced gap for mobile
       justifyContent: 'center',
       flexWrap: 'wrap', // This allows buttons to stack on very small screens
       padding: '0 10px'
-    },
     },
     primaryBtn: {
       padding: '12px 32px',
