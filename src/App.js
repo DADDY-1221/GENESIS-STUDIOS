@@ -2,7 +2,8 @@ import React from 'react';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import TravelShowcase from './TravelShowcase';
-import BrandStory from './BrandStory'; // Add this
+import BrandStory from './BrandStory';
+import Footer from './Footer'; // Add this
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Navbar />
       <Hero />
       <TravelShowcase />
-      <BrandStory /> {/* Add the story here */}
+      <BrandStory />
+      <Footer /> {/* Add the footer here */}
     </div>
   );
 }
