@@ -58,9 +58,11 @@ export default function Hero() {
     },
     btnContainer: {
       display: 'flex',
-      gap: '20px',
+      gap: '15px', // Reduced gap for mobile
       justifyContent: 'center',
-      flexWrap: 'wrap'
+      flexWrap: 'wrap', // This allows buttons to stack on very small screens
+      padding: '0 10px'
+    },
     },
     primaryBtn: {
       padding: '12px 32px',
