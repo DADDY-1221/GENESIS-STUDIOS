@@ -3,7 +3,8 @@ import Hero from './Hero';
 import Navbar from './Navbar';
 import TravelShowcase from './TravelShowcase';
 import BrandStory from './BrandStory';
-import Footer from './Footer'; // Add this
+import ProjectSpotlight from './ProjectSpotlight'; // Import the new file
+import Footer from './Footer';
 
 function App() {
   return (
@@ -12,7 +13,8 @@ function App() {
       <Hero />
       <TravelShowcase />
       <BrandStory />
-      <Footer /> {/* Add the footer here */}
+      <ProjectSpotlight /> {/* Add it here before the footer */}
+      <Footer />
     </div>
   );
 }
